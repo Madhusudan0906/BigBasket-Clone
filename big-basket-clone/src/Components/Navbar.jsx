@@ -20,7 +20,7 @@ export default function Navbar() {
                 border:"none",
                 marginTop:"20px",
                 padding:"4px"
-              }}><img src="/images/icons/search.png" alt="search" width="30%" /></button>
+              }}><img src="/images/icons/search.png" alt="search" width="100%" /></button>
             </form>
           </div>
           <div>
