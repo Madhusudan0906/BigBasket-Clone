@@ -19,6 +19,7 @@
     font-size: 14px;
     color: rgb(88, 88, 88);
     font-weight: 400;
+    display: flex;
 }
 .navdiv22{
     display: flex;
@@ -38,4 +39,12 @@
     width: 550px;
     padding: 7px;
     margin-top: 20px;
+    border: 1px solid;
+}
+.navdiv22>div:first-child>form{
+    display: flex;
+}
+.navdiv22>div:first-child>form>button{
+    height: 37px;
+    width: 37px;
 }
