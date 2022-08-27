@@ -1,4 +1,5 @@
 import { Grid, GridItem,Heading,Center } from "@chakra-ui/react";
+import { Divider } from "antd";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -31,7 +32,7 @@ export default function Beverages() {
         Beverages
   </Heading>
   </Center>
-  <hr/>
+  <Divider/>
   <br/>
       <Grid templateColumns="repeat(4, 1fr)" gap={6}>
         {data.map((el) => {
