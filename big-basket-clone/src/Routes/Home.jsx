@@ -13,12 +13,14 @@ import BrandStore from "../Components/BrandStore";
 import FruitVeg from "../Components/FruitVeg";
 import Beverages from "../Components/Beverages";
 import BeautyHygiene from "../Components/BeautyHygiene";
+import BestSellers from "../Components/BestSellers";
 
 export default function Home(){
     return (<>
     <Navbar />
     <CarouselTop />
     <CategoryLinks />
+    <BestSellers />
     <BankOffers />
     <TopOffers />
     <FruitVeg />
