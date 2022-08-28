@@ -1,5 +1,6 @@
 import { Grid, GridItem, Heading, Center } from "@chakra-ui/react";
 import { Divider } from "antd";
+import Slider from "react-slick";
 import { useEffect } from "react";
 import { useState } from "react";
 import Products from "./Products";
@@ -11,22 +12,49 @@ function getBO() {
       console.log(err);
     });
 }
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "grey",height:"30px",paddingTop:"5px" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "grey",height:"30px",paddingTop:"5px" }}
+      onClick={onClick}
+    />
+  );
+}
 export default function BestSellers() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    getBO()
+    setTimeout(()=>{getBO()
       .then((res) => {
-        console.log(res);
         setData([...res]);
+        return res;
       })
       .catch((err) => {
         console.log(err);
-      });
-
-    setTimeout(()=>{
-        console.log(data);
-    },4000)
+      });},1000)
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+  };
   return (
     <div
       style={{
@@ -43,12 +71,14 @@ export default function BestSellers() {
       </Center>
       <Divider />
       <br />
-      <Grid templateColumns="repeat(4, 1fr)" gap={6}>
-        {data.length?data.map((el) => {
-          return (
-            <GridItem w="100%" h="100%" bg="blue.500" key={el.id}>
+      <Slider {...settings}>
+      
+      
+        {data.length>0?data.map((el) => {
+          return (<>
               {el.rating ? (
                 <Products
+                id={el.id}
                   name={el.name}
                   category={el.category}
                   option={el.options}
@@ -57,15 +87,17 @@ export default function BestSellers() {
                 />
               ) : (
                 <Products
+                id={el.id}
                   name={el.name}
                   category={el.category}
                   option={el.options}
                 />
               )}
-            </GridItem>
+              </>
           );
         }):""}
-      </Grid>
+
+      </Slider>
     </div>
   );
 }
