@@ -29,7 +29,7 @@ export default function YourDailyStaples() {
         marginBottom:"30px",
     }}>
         <Center><Heading as='h3' size='lg'>
-            Your Dailt Staples
+            Your Daily Staples
   </Heading>
   </Center>
   <hr/>

@@ -31,7 +31,7 @@ export default function Footer() {
           times, ensuring that all your products from groceries to snacks{" "}
           <span>branded foods</span> reach you in time.
         </p>
-        <p>
+       
           <ul>
             <li>
               Slotted Delivery: Pick the most convenient delivery slot to have
@@ -53,7 +53,7 @@ export default function Footer() {
               arrangement with a nearby specialty store, verified by us.
             </li>
           </ul>
-        </p>
+        
         <h3>India’s biggest Online Supermarket</h3>
         <p>
           bigbasket.com believes in providing the highest level of customer
@@ -134,10 +134,10 @@ export default function Footer() {
         <div>
           <p>Get Social With Us</p>
           <div>
-            <img src="" alt="facebook" />
-            <img src="" alt="pintrest" />
-            <img src="" alt="twitter" />
-            <img src="" alt="instagram" />
+            <img src="images/icons/facebook.png" alt="facebook" />
+            <img src="images/icons/pinterest.png" alt="pinterest" />
+            <img src="images/icons/twitter.png" alt="twitter" />
+            <img src="images/icons/instagram.png" alt="instagram" />
           </div>
         </div>
       </div>
