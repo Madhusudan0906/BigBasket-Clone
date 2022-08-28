@@ -1,6 +1,7 @@
 import { Grid, GridItem,Heading,Center } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useState } from "react";
+import stylesa from "./allcss.module.css";
 
 function getBO() {
   return fetch("https://json-server-bb-clone.herokuapp.com/api/YourDailyStaples")
@@ -36,7 +37,7 @@ export default function YourDailyStaples() {
       <Grid templateColumns="repeat(6, 1fr)" gap={6}>
         {data.map((el) => {
           return (
-            <GridItem w="100%" h="100%" bg="blue.500" key={el.id}>
+            <GridItem w="100%" h="100%" bg="blue.500" key={el.id} className={stylesa.borderg}>
               <img src={el.image} alt="error" />
             </GridItem>
           );

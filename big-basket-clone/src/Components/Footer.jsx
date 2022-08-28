@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Footer.module.css";
 export default function Footer() {
   return (
-    <div className={styles.FooterP}>
+    <div>    <div className={styles.FooterP}>
       <div className={styles.boxFoot}>
         <h3>bigbasket – online grocery store</h3>
         <p>
@@ -188,9 +188,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div>
+      
+    </div>
+    <div style={{marginTop:"10px",paddingBottom:"10px",backgroundColor:"grey",width:"100%"}}>
       Copyright © 2021-2023 Supermarket Grocery Supplies Pvt Ltd
       </div>
     </div>
+
   );
 }

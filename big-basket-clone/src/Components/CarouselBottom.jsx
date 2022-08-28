@@ -21,7 +21,7 @@ function CarouselBottom() {
     },[])
         
   return (
-    <div className={styles.bottomC}>
+    <div className={styles.bottomC} >
       <Carousel autoplay >
    
     {data.map((el)=>{

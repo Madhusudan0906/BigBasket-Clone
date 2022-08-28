@@ -2,7 +2,7 @@ import { Grid, GridItem,Heading,Center  } from "@chakra-ui/react";
 import { Divider } from "antd";
 import { useEffect } from "react";
 import { useState } from "react";
-
+import stylesa from "./allcss.module.css";
 function getBO() {
   return fetch("https://json-server-bb-clone.herokuapp.com/api/bankOffers")
     .then((res) => res.json())
@@ -38,7 +38,7 @@ export default function BankOffers() {
         {data.map((el) => {
           return (
             <GridItem w="100%" h="100%" bg="blue.500" key={el.id}>
-              <img src={el.image} alt="error" />
+              <img src={el.image} alt="error" className={stylesa.borderg}  />
             </GridItem>
           );
         })}

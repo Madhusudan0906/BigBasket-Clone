@@ -28,12 +28,12 @@
 }
 .FootLinks>div>p{
     font-size: 14px;
-    line-height: 12px;
+    line-height: 20px;
 }
 .FootLinks>div>p:first-child{
     color: #76EE00;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 30px;
     margin-top: 30px;
 }
 .FootLinks2{

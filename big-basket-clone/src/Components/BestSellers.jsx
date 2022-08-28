@@ -1,9 +1,12 @@
-import { Grid, GridItem, Heading, Center } from "@chakra-ui/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Heading, Center } from "@chakra-ui/react";
 import { Divider } from "antd";
 import Slider from "react-slick";
 import { useEffect } from "react";
 import { useState } from "react";
 import Products from "./Products";
+
 
 function getBO() {
   return fetch("https://json-server-bb-clone.herokuapp.com/api/BestSellers")
@@ -63,6 +66,7 @@ export default function BestSellers() {
         marginTop: "30px",
         marginBottom: "30px",
       }}
+
     >
       <Center>
         <Heading as="h3" size="lg">
@@ -71,7 +75,7 @@ export default function BestSellers() {
       </Center>
       <Divider />
       <br />
-      <Slider {...settings}>
+      <Slider {...settings} style={{width:"100%"}}>
       
       
         {data.length>0?data.map((el) => {

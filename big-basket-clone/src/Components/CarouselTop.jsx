@@ -27,30 +27,18 @@ function CarouselTop() {
     },[])
         
   return (
-    <>
+    <div style={{width:"100%"}}>
       <Carousel autoplay>
-    {/* <div>
-      <h3 style={contentStyle}>1</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>2</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
-    </div> */}
     {data.map((el)=>{
         return (
             <div key={el.id}>
-            <img src={el.image} alt={el.id} />
+            <img src={el.image} alt={el.id} width="100%"/>
             <h5 style={contentStyle}>{el.t1}<br/>{el.t2}</h5>
             </div>
         )
     })}
   </Carousel>
-    </>
+    </div>
   );
 }
 
