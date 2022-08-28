@@ -1,0 +1,90 @@
+.navdiv {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 85%;
+  margin: auto;
+  justify-content: right;
+}
+.navdiv2 {
+  display: flex;
+  flex-direction: column;
+}
+.navdiv2 > div:first-child {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.navdiv2 > div:first-child > p {
+  font-size: 14px;
+  color: rgb(88, 88, 88);
+  font-weight: 400;
+  display: flex;
+}
+.navdiv22 {
+  display: flex;
+  justify-content: space-between;
+}
+.navdiv22 > div:last-child {
+  background-color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  gap: 20px;
+}
+.navdiv22 > div:last-child > .cart {
+  text-align: right;
+}
+.navdiv22 > div:first-child > form > input:first-child {
+  width: 550px;
+  padding: 7px;
+  margin-top: 20px;
+  border: 1px solid;
+}
+.navdiv22 > div:first-child > form {
+  display: flex;
+}
+.navdiv22 > div:first-child > form > button {
+  height: 37px;
+  width: 37px;
+}
+.loginin {
+  display: block;
+  width: 390px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(25, 201, 25);
+}
+.loginin:focus {
+  border-color: green;
+}
+.inputcontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.inputcontainer label {
+  position: relative;
+  pointer-events: none;
+  transform: translate(0, 23px) scale(1);
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  color: #b4b4b4;
+  font-size: 16px;
+  line-height: 2;
+  left: 0px;
+}
+.inputcontainer:focus-within label {
+  transform: translate(0, 11px) scale(0.8);
+  color: #6f81a5;
+}
+.loginbtn{
+    width: 100%;
+    margin-top: 30%;
+    background-color: #76EE00;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
