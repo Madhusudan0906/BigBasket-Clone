@@ -12,7 +12,8 @@
 }
 .navdiv2 > div:first-child {
   display: flex;
-  justify-content: end;
+  justify-content:flex-end;
+
   gap: 20px;
 }
 .navdiv2 > div:first-child > p {

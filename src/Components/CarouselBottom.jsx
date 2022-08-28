@@ -15,7 +15,7 @@ function CarouselBottom() {
     const [data,setData]=useState([]);
     useEffect(()=>{
         getImagesCB().then((res)=>{
-            console.log(res);
+            // console.log(res);
             setData([...res]);
         })
     },[])

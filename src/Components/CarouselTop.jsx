@@ -21,7 +21,7 @@ function CarouselTop() {
     const [data,setData]=useState([]);
     useEffect(()=>{
         getImagesCT().then((res)=>{
-            console.log(res);
+            // console.log(res);
             setData([...res]);
         })
     },[])

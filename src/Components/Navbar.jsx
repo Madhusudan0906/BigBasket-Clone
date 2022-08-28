@@ -12,10 +12,8 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverBody,
-  PopoverFooter,
   PopoverArrow,
   PopoverCloseButton,
-  PopoverAnchor,
 } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
 import Login from "./Login";

@@ -16,7 +16,6 @@ import BeautyHygiene from "./Components/BeautyHygiene";
 import BestSellers from "./Components/BestSellers";
 import { ChakraProvider } from '@chakra-ui/react';
 import './App.css';
-import AllRoutes from "./Routes/AllRoutes"
 
 function App() {
   return (
