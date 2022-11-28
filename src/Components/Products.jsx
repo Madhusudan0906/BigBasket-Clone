@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import stylesa from "./allcss.module.css";
-
+function changeopt(props,setOpti){
+    let eid=props.id
+    let a=document.querySelector(`#opti${eid}`).value;
+    setOpti(a);
+}
 export default function Products(props){
     const {name,category,option}=props;
     // let keys;
     const [opti,setOpti]=useState("");
-    function changeopt(){
-        let eid=props.id
-        let a=document.querySelector(`#opti${eid}`).value;
-        setOpti(a);
-    }
+    
     // useEffect(()=>{
     //     keys=Object.keys(option).map((key)=>{
     //         return (<option value={key}>{key}</option>)
@@ -17,9 +17,9 @@ export default function Products(props){
     // },[]);
     useEffect(()=>{
             if(option){
-                changeopt();
+                changeopt(props,setOpti);
             }
-        },[option]);
+        },[option,props,setOpti]);
     
     return (<div key={props.id}>
         <div className={stylesa.items}><div>
