@@ -9,7 +9,7 @@ import Products from "./Products";
 
 
 function getBO() {
-  return fetch("https://json-server-bb-clone.herokuapp.com/api/BestSellers")
+  return fetch("https://bigbasket-json-server.onrender.com/api/BestSellers")
     .then((res) => res.json())
     .catch((err) => {
       console.log(err);

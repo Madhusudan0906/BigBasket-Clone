@@ -5,7 +5,7 @@ import { useState } from "react";
 import styles from "./CarouselBottom.module.css";
 
 function getImagesCB(){
-    return (fetch('https://json-server-bb-clone.herokuapp.com/api/carouselBottomBB')
+    return (fetch('https://bigbasket-json-server.onrender.com/api/carouselBottomBB')
     .then((res)=>res.json())
     .catch((err)=>{console.log(err)}));
 }

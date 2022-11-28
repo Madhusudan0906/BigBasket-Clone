@@ -11,7 +11,7 @@ const contentStyle = {
   };
 
 function getImagesCT(){
-    return (fetch('https://json-server-bb-clone.herokuapp.com/api/carouselTopBB')
+    return (fetch('https://bigbasket-json-server.onrender.com/api/carouselTopBB')
     .then((res)=>res.json())
     .catch((err)=>{console.log(err)}));
 }

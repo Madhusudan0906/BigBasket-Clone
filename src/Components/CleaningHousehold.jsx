@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import stylesa from "./allcss.module.css";
 function getBO() {
-  return fetch("https://json-server-bb-clone.herokuapp.com/api/CleaningHousehold")
+  return fetch("hhttps://bigbasket-json-server.onrender.com/api/CleaningHousehold")
     .then((res) => res.json())
     .catch((err) => {
       console.log(err);
